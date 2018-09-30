@@ -4,8 +4,14 @@ Created on 29 Sep 2018
 @author: colinoriordan
 '''
 
+import sys
 
 def main():
+    
+    print(sys.version)
+    
+    if sys.version_info[0] < 3:
+        raise Exception("Python 3 or a more recent version is required.")
     
     #Setup variables
     results=[]
