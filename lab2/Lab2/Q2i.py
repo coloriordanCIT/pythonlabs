@@ -32,29 +32,29 @@ def yearsExperience():
 
 def microsoftCertification():
     
-    eligible = "Y" or "y"
-    nonEligible="N" or "n"
-    valid=eligible or nonEligible
     certified=""
+    eligible={'y', 'Y'}
+    nonEligible={'n', 'N'}
+    valid=eligible or nonEligible
     
-    while certified!=valid:
-        certified=input("Do you hold a Microsoft certification y/n: ")
+    while certified not in valid:
+        certified=str(input("Do you hold a Microsoft certification y/n: "))
 
-    if certified==nonEligible:
+    if certified in nonEligible:
         print("You are not eligible. You must hold a Microsoft certification.")
         exit()
         
 def computingDegree():
     
-    eligible = "Y" or "y"
-    nonEligible="N" or "n"
+    response=""
+    eligible = {'Y', 'y'}
+    nonEligible={'N', 'n'}
     valid=eligible or nonEligible
-    certified=""
+
+    while response not in valid:
+        response=str(input("Do you hold a first class honours undergraduate computing degree y/n: "))
     
-    while response!=valid:
-        response=input("Do you hold a first class honours undergraduate computing degree y/n: ")
-    
-    if response==nonEligible:
+    if response in nonEligible:
         print("You are not eligible. You must have a first class honours computing degree.")
         exit()
 
