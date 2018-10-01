@@ -32,8 +32,8 @@ def main():
         
 
 def getRectangleArea(num):
-    width = input("\nEnter the width of rectangle {}:".format(num))
-    length = input("\nEnter the length of rectangle {}:".format(num))
+    width = int(input("\nEnter the width of rectangle {}:".format(num)))
+    length = int(input("\nEnter the length of rectangle {}:".format(num)))
     return width*length
 
 def getLargerArea(rec1, rec2):
