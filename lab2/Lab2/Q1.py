@@ -2,10 +2,15 @@
 Created on 29 Sep 2018
 
 @author: colinoriordan
+
+Application which get the user input of two rectangles and 
+calculates the area of each rectangle, and compares them to see which is larger.
+Tells the user which rectangle has a larger area.
 '''
 
 import sys
 
+'''Main function of application'''
 def main():
     
     print(sys.version)
